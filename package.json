@@ -1,0 +1,28 @@
+{
+  "name": "poneres.com",
+  "version": "1.0.0",
+  "description": "Poneres Property Management",
+  "main": "index.html",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "export BUILD_DT=$(date '+%Y-%m-%d') && nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "npx prettier . --write",
+    "lint:check": "npx prettier . --check"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nuxt": "^3.9.0",
+    "prettier": "^3.1.1",
+    "vue": "^3.4.5",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@inkline/inkline": "^4.1.0-0",
+    "@inkline/plugin": "^1.5.2",
+    "vue3-carousel-nuxt": "^1.1.0"
+  }
+}
