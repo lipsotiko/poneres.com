@@ -4,7 +4,6 @@
       <img class="logo" src="~/assets/images/poneres-logo.png" />
     </div>
     <div class="description-text-container second-col-gridarea two">
-      <div class="description-text"><strong>Poneres Property Management</strong></div>
       <span class="description-text">A property management company.</span>
     </div>
     <div class="mail-to last-row-alignment four">
@@ -46,6 +45,13 @@
   bottom: 0%;
   left: 0%;
   right: 0%;
+}
+
+.my-container {
+  @media screen and (max-width: 800px) {
+    top: 56px;
+    margin: auto 0;
+  }
 }
 
 .logo {
@@ -91,6 +97,7 @@
 .service-areas {
   padding: 26px 8px;
   font-weight: lighter;
+  text-wrap: nowrap;
 }
 
 .my-container {
