@@ -17,7 +17,7 @@
         <a href="tel:443-301-9719">
           <img src="~/assets/images/phone-solid.svg" width="20" />
           <div>
-            773-599-2554
+            443-301-9719
           </div>
         </a>
       </div>
@@ -46,11 +46,20 @@
   left: 0%;
   right: 0%;
 }
+.my-container {
+  @media screen and (max-width: 767px) {
+    flex-wrap: nowrap;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
 
 .my-container {
-  @media screen and (max-width: 800px) {
-    top: 56px;
-    margin: auto 0;
+  @media screen and (max-width: 991px) {
+    flex-flow: column;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-items: stretch;
   }
 }
 
@@ -68,9 +77,26 @@
 }
 
 .description-text {
+  @media screen and (max-width: 5000px) {
+    font-size: 42px;
+  }
+}
+
+.description-text {
   @media screen and (max-width: 1600px) {
     font-size: 38px;
-    padding-top: 22px;
+  }
+}
+
+.description-text-container {
+  @media screen and (max-width: 5000px) {
+    margin-top: 50px;
+  }
+}
+
+.description-text-container {
+  @media screen and (max-width: 1600px) {
+    margin-top: 54px;
   }
 }
 
