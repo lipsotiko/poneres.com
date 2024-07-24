@@ -1,7 +1,7 @@
 <template>
   <div class="my-container">
     <div class="one">
-      <img class="logo" src="~/assets/images/poneres-logo.png" />
+      <img class="logo" src="~/assets/images/poneres-logo.png" alt="Poneres.com Logo" />
     </div>
     <div class="description-text-container second-col-gridarea two">
       <span class="description-text">A property management company.</span>
@@ -9,13 +9,13 @@
     <div class="mail-to last-row-alignment four">
       <div>
         <a href="mailto:hello@poneres.com">
-          <img src="~/assets/images/envelope-solid.svg" width="20" />
+          <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
           <div>
             hello@poneres.com
           </div>
         </a>
         <a href="tel:443-301-9719">
-          <img src="~/assets/images/phone-solid.svg" width="20" />
+          <img src="~/assets/images/phone-solid.svg" width="20" alt="phone icon" />
           <div>
             443-301-9719
           </div>
