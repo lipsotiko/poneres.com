@@ -46,6 +46,7 @@
   left: 0%;
   right: 0%;
 }
+
 .my-container {
   @media screen and (max-width: 767px) {
     flex-wrap: nowrap;
@@ -65,6 +66,12 @@
 
 .logo {
   height: 168px;
+}
+
+.logo {
+  @media screen and (max-width: 991px) {
+    height: 98px;
+  }
 }
 
 .second-col-gridarea {
@@ -88,6 +95,12 @@
   }
 }
 
+.description-text {
+  @media screen and (max-width: 991px) {
+    font-size: 28px;
+  }
+}
+
 .description-text-container {
   @media screen and (max-width: 5000px) {
     margin-top: 50px;
@@ -97,6 +110,12 @@
 .description-text-container {
   @media screen and (max-width: 1600px) {
     margin-top: 54px;
+  }
+}
+
+.description-text-container {
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
   }
 }
 
