@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      buildDate: process.env.BUILD_DATE
-    }
-  }
+      buildDate: process.env.BUILD_DATE,
+    },
+  },
 });

@@ -5,16 +5,26 @@
 </template>
 <script setup lang="ts">
 const url = "https://poneres.com";
-const title = 'Poneres.com';
+const title = "Poneres.com | A Property Management Company";
+const description =
+  "Keeping Chicago's rental market running smoothly. Landlords can relax knowing their investments are in qualified hands, with services covering everything from tenant placement to maintenance coordination.";
 
 useHead({
   title,
   meta: [
     {
-      name: "description",
-      property: "og:description",
-      content: "A property management company.",
-    }
+      property: "description",
+      content: description,
+    },
+    {
+      property: "keywords",
+      content:
+        "poneres, property, management, real estate, maintenance, rental, services, tenant, landlord, chicago, niles, park ridge, evanston",
+    },
+    {
+      property: "author",
+      content: "Poneres Property Management",
+    },
   ],
   link: [
     {
@@ -27,11 +37,12 @@ useHead({
 useSeoMeta({
   title,
   ogUrl: url,
-  ogTitle: title,
+  ogTitle: "Poneres Property Management",
+  ogDescription: description,
   ogImage: `${url}/poneres-logo.png`,
   ogImageWidth: 600,
   ogImageHeight: 600,
-  ogType: "website"
+  ogType: "website",
 });
 </script>
 <style lang="scss">
