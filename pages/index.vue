@@ -28,6 +28,14 @@
           />
           <div>443-301-9719</div>
         </a>
+        <a href="https://poneres-portal-erg0gza3d2hwc6dh.eastus2-01.azurewebsites.net/oauth2/authorization/okta" target="_blank">
+          <img
+            src="~/assets/images/globe.svg"
+            width="20"
+            alt="phone icon"
+          />
+          <div>Portal</div>
+        </a>
       </div>
     </div>
     <div class="second-col-gridarea last-row-alignment three">
