@@ -10,7 +10,7 @@
     <div class="description-text-container second-col-gridarea two">
       <span class="description-text">A property management company.</span>
     </div>
-    <div class="mail-to last-row-alignment four">
+    <div class="bottom-left-stuff last-row-alignment four">
       <div>
         <a href="mailto:hello@poneres.com">
           <img
@@ -28,18 +28,18 @@
           />
           <div>443-301-9719</div>
         </a>
-        <a href="https://poneres-portal-erg0gza3d2hwc6dh.eastus2-01.azurewebsites.net/oauth2/authorization/okta" target="_blank">
+        <a href="https://poneres-portal-erg0gza3d2hwc6dh.eastus2-01.azurewebsites.net/apply" target="_blank">
           <img
-            src="~/assets/images/globe.svg"
+            src="~/assets/images/sign-hanging-solid.svg"
             width="20"
-            alt="phone icon"
+            alt="apply icon"
           />
-          <div>Portal</div>
+          <div>Apply</div>
         </a>
       </div>
     </div>
     <div class="second-col-gridarea last-row-alignment three">
-      <div class="service-areas">Baltimore - Chicago - Miami</div>
+      <div class="service-areas">Baltimore, MD</div>
     </div>
   </div>
 </template>
@@ -139,23 +139,24 @@
   align-self: end;
 }
 
-.mail-to a {
+.bottom-left-stuff a {
   color: #000;
   display: flex;
   font-weight: lighter;
   text-decoration: none;
 }
 
-.mail-to a:hover {
+.bottom-left-stuff a:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.1px;
 }
 
-.mail-to div {
+.bottom-left-stuff div {
   padding: 8px 8px;
 }
 
 .service-areas {
+  display: flex;
   padding: 26px 8px;
   font-weight: lighter;
   text-wrap: nowrap;

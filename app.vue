@@ -1,14 +1,4 @@
 <template>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G80494X25T">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-G80494X25T');
-  </script>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
@@ -17,7 +7,7 @@
 const url = "https://poneres.com";
 const title = "Poneres.com | A Property Management Company";
 const description =
-  "Keeping Chicago's rental market running smoothly. Landlords can relax knowing their investments are in qualified hands, with services covering everything from tenant placement to maintenance coordination.";
+  "Keeping Baltimore's rental market running smoothly. Landlords can relax knowing their investments are in qualified hands, with services covering everything from tenant placement to maintenance coordination.";
 
 useHead({
   title,
@@ -42,6 +32,12 @@ useHead({
       rel: "canonical",
     },
   ],
+  script: [
+    {
+      async: true,
+      src: "https://www.googletagmanager.com/gtag/js?id=G-G80494X25T"
+    }
+  ]
 });
 
 useSeoMeta({
