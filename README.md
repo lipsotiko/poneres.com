@@ -28,6 +28,7 @@
   * https://www.pontiangreeks.org
 
 ## Ask for a Review
-* Google: https://g.page/r/CQdUUyDqk3JsEBM/review
-* Yelp: https://www.yelp.com/writeareview/biz/ADh6npovpsGiTSLHTJK_wg
-* YellowPages: https://www.yellowpages.com/contribute/businesses/576575669/review
+
+- Google: https://g.page/r/CQdUUyDqk3JsEBM/review
+- Yelp: https://www.yelp.com/writeareview/biz/ADh6npovpsGiTSLHTJK_wg
+- YellowPages: https://www.yellowpages.com/contribute/businesses/576575669/review

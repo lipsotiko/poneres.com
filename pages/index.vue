@@ -1,39 +1,41 @@
 <template>
   <div class="my-container">
     <div class="one">
-      <img
-        class="logo"
-        src="~/assets/images/poneres-logo.png"
-        alt="Poneres.com Logo"
-      />
+      <img class="logo" src="~/assets/images/poneres-logo.png" alt="Poneres.com Logo" />
     </div>
     <div class="description-text-container second-col-gridarea two">
-      <span class="description-text">A property management company.</span>
+      <span class="description-text">A property & investment group</span>
+      <p>
+        At Poneres Property & Investment Group, we offer a full spectrum of real estate services designed to meet the
+        diverse needs of property owners and investors. Founded on a family legacy of over 20 years in property
+        management, our company is led by brothers Evangelos and Christos, who carry forward the values and dedication
+        instilled by our mother. Growing up immersed in the business, we witnessed firsthand her commitment to quality,
+        tenant care, and professional excellence.
+      </p>
+      <p>
+        Today, we proudly uphold those values through a range of specialized services, including Comprehensive Property
+        Management, REI (Real Estate Investment) Consulting, Real Estate Market Analysis, and Tenant Management &
+        Support. Whether you’re an investor seeking strategic guidance, a property owner needing trustworthy management,
+        or a tenant looking for a comfortable and well-maintained home, Poneres Property & Investment Group is here to
+        deliver with integrity and a hands-on approach.
+      </p>
+      <p>
+        Choosing us means choosing a team that treats each property as if it were our own. We believe in creating spaces
+        that foster comfort, safety, and a sense of belonging—places we would be proud to call home.
+      </p>
     </div>
     <div class="bottom-left-stuff last-row-alignment four">
       <div>
         <a href="mailto:hello@poneres.com">
-          <img
-            src="~/assets/images/envelope-solid.svg"
-            width="20"
-            alt="email icon"
-          />
+          <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
           <div>hello@poneres.com</div>
         </a>
         <a href="tel:443-301-9719">
-          <img
-            src="~/assets/images/phone-solid.svg"
-            width="20"
-            alt="phone icon"
-          />
+          <img src="~/assets/images/phone-solid.svg" width="20" alt="phone icon" />
           <div>443-301-9719</div>
         </a>
         <a href="https://poneres-portal-erg0gza3d2hwc6dh.eastus2-01.azurewebsites.net/apply" target="_blank">
-          <img
-            src="~/assets/images/sign-hanging-solid.svg"
-            width="20"
-            alt="apply icon"
-          />
+          <img src="~/assets/images/sign-hanging-solid.svg" width="20" alt="apply icon" />
           <div>Apply</div>
         </a>
       </div>
