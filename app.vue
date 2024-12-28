@@ -5,9 +5,9 @@
 </template>
 <script setup lang="ts">
 const url = "https://poneres.com";
-const title = "Poneres.com | A Property Management Company";
+const title = "Poneres.com | A Property & Investment Group";
 const description =
-  "Keeping Baltimore's rental market running smoothly. Landlords can relax knowing their investments are in qualified hands, with services covering everything from tenant placement to maintenance coordination.";
+  "Keeping Chicago's rental market running smoothly. Landlords can relax knowing their investments are in qualified hands, with services covering everything from tenant placement to maintenance coordination.";
 
 useHead({
   title,
