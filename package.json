@@ -6,7 +6,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "export BUILD_DT=$(date '+%Y-%m-%d') && nuxt generate",
+    "generate": "export BUILD_DATE=$(date '+%Y-%m-%d %H:%M:%S') && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "npx prettier . --write",

@@ -4,7 +4,8 @@
       <img class="logo" src="~/assets/images/poneres-logo.png" alt="Poneres.com Logo" />
     </div>
     <div class="description-text-container second-col-gridarea two">
-      <span class="description-text">a property management & investment group focused on <b>unlocking real estate potential</b> that benefits investors and residents alike.</span>
+      <span class="description-text">a property management & investment group focused on <b>unlocking real estate
+          potential</b> that benefits investors and residents alike.</span>
     </div>
     <div class="bottom-left-stuff last-row-alignment four">
       <div>
@@ -20,13 +21,13 @@
           <img src="~/assets/images/instagram.svg" width="20" alt="instagram icon" />
           <div>Instagram</div>
         </a>
-        <!-- <a href="https://poneres-portal-erg0gza3d2hwc6dh.eastus2-01.azurewebsites.net/apply" target="_blank">
+        <!-- <a href="https://app.poneres.com/apply" target="_blank">
           <img src="~/assets/images/sign-hanging-solid.svg" width="20" alt="apply icon" />
           <div>Apply</div>
         </a> -->
       </div>
     </div>
-    <div class="last-row-alignment three">
+    <div class="last-row-alignment second-col-gridarea three">
       <div class="service-areas">Baltimore - Chicago</div>
     </div>
   </div>
@@ -39,9 +40,6 @@
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  justify-content: space-around;
-  align-items: stretch;
-  max-width: none;
   padding: 120px 150px 40px;
   display: grid;
   position: absolute;
@@ -52,19 +50,15 @@
 }
 
 .my-container {
-  @media screen and (max-width: 767px) {
-    flex-wrap: nowrap;
-    padding-left: 64px;
-    padding-right: 64px;
+  @media screen and (max-width: 991px) {
+    display: flex;
+    padding: 88px 64px 40px 64px;
   }
 }
 
 .my-container {
-  @media screen and (max-width: 991px) {
-    flex-flow: column;
-    grid-auto-flow: row;
-    justify-content: space-around;
-    align-items: stretch;
+  @media screen and (max-width: 767px) {
+    padding: 42px 64px 40px 64px;
   }
 }
 
@@ -102,6 +96,12 @@
 .description-text {
   @media screen and (max-width: 991px) {
     font-size: 28px;
+  }
+}
+
+.description-text {
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
   }
 }
 
@@ -148,18 +148,6 @@
   padding: 16px 8px;
   font-weight: lighter;
   text-wrap: nowrap;
-}
-
-.my-container {
-  @media screen and (max-width: 991px) {
-    flex-flow: column;
-    grid-auto-flow: row;
-    justify-content: space-around;
-    align-items: stretch;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-  }
 }
 
 .one {
