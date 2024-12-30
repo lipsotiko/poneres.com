@@ -34,6 +34,7 @@
 </template>
 <style scoped>
 .my-container {
+  z-index: 50;
   grid-column-gap: 48px;
   grid-row-gap: 48px;
   flex-direction: column;
@@ -56,11 +57,11 @@
   }
 }
 
-.my-container {
+/* .my-container {
   @media screen and (max-width: 767px) {
-    padding: 42px 64px 40px 64px;
+    padding: 88px 64px 40px 64px;
   }
-}
+} */
 
 .logo {
   height: 168px;
