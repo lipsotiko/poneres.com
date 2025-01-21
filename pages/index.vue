@@ -17,14 +17,18 @@
           <img src="~/assets/images/phone-solid.svg" width="20" alt="phone icon" />
           <div>443-301-9719</div>
         </a> -->
-        <a href="https://www.instagram.com/poneres_investments" target="_blank">
+        <!-- <a href="https://www.instagram.com/poneres_investments" target="_blank">
           <img src="~/assets/images/instagram.svg" width="20" alt="instagram icon" />
           <div>Instagram</div>
+        </a> -->
+        <a href="https://app.poneres.com/oauth2/authorization/okta" target="_blank">
+          <img src="~/assets/images/globle.svg" width="20" alt="portal login icon" />
+          <div>Tenant Portal</div>
         </a>
-        <!-- <a href="https://app.poneres.com/apply" target="_blank">
+        <a href="https://app.poneres.com/apply" target="_blank">
           <img src="~/assets/images/sign-hanging-solid.svg" width="20" alt="apply icon" />
           <div>Apply</div>
-        </a> -->
+        </a>
       </div>
     </div>
     <div class="last-row-alignment second-col-gridarea three">
