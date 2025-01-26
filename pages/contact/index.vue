@@ -1,5 +1,5 @@
 <template>
-  <IToast v-if="saved" color="success">
+  <IToast v-if="saved" v-model="saved" color="success" dismissible>
     <p>Your request has been submitted. Our team will be in touch with you soon.</p>
   </IToast>
   <IContainer class="sign-up-container">
@@ -185,10 +185,6 @@ export default {
 
 .request-sent {
   text-align: center;
-}
-
-p {
-  margin-top: 22px;
 }
 
 .form-container {

@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       buildDate: process.env.BUILD_DATE,
       apiBase:
         process.env.NODE_ENV === "development"
-          ? ""
+          ? "http://localhost:8080"
           : "https://app.poneres.com",
     },
   },
