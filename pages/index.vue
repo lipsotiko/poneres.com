@@ -1,32 +1,38 @@
 <template>
   <div class="my-container">
     <div class="one">
-      <img class="logo" src="~/assets/images/poneres-logo.png" alt="Poneres.com Logo" />
+      <img
+        class="logo"
+        src="~/assets/images/poneres-logo.png"
+        alt="Poneres.com Logo"
+      />
     </div>
     <div class="description-text-container second-col-gridarea two">
-      <span class="description-text">a property management & investment group focused on <b>unlocking real estate
-          potential</b> that benefits investors and residents alike.</span>
+      <span class="description-text"
+        >a property management & investment group focused on
+        <b>unlocking real estate potential</b> that benefits investors and
+        residents alike.</span
+      >
     </div>
     <div class="bottom-left-stuff last-row-alignment four">
       <div>
-        <a href="mailto:hello@poneres.com">
-          <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
-          <div>hello@poneres.com</div>
-        </a>
-        <!-- <a href="tel:443-301-9719">
-          <img src="~/assets/images/phone-solid.svg" width="20" alt="phone icon" />
-          <div>443-301-9719</div>
-        </a> -->
-        <!-- <a href="https://www.instagram.com/poneres_investments" target="_blank">
-          <img src="~/assets/images/instagram.svg" width="20" alt="instagram icon" />
-          <div>Instagram</div>
-        </a> -->
-        <a href="https://app.poneres.com/oauth2/authorization/okta" target="_blank">
-          <img src="~/assets/images/globle.svg" width="20" alt="portal login icon" />
+        <a
+          href="https://app.poneres.com/oauth2/authorization/okta"
+          target="_blank"
+        >
+          <img
+            src="~/assets/images/globle.svg"
+            width="20"
+            alt="portal login icon"
+          />
           <div>Tenant Portal</div>
         </a>
         <a href="https://app.poneres.com/apply" target="_blank">
-          <img src="~/assets/images/sign-hanging-solid.svg" width="20" alt="apply icon" />
+          <img
+            src="~/assets/images/sign-hanging-solid.svg"
+            width="20"
+            alt="apply icon"
+          />
           <div>Apply</div>
         </a>
       </div>
@@ -132,19 +138,7 @@
 }
 
 .bottom-left-stuff a {
-  color: #000;
   display: flex;
-  font-weight: lighter;
-  text-decoration: none;
-}
-
-.bottom-left-stuff a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 0.1px;
-}
-
-.bottom-left-stuff div {
-  padding: 8px 8px;
 }
 
 .service-areas {

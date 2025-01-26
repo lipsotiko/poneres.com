@@ -64,4 +64,20 @@ html {
   font-family: "RedditMono";
   src: url("~/assets//RedditMono.ttf");
 }
+
+.bottom-left-stuff a {
+  color: #000;
+  display: flex;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.bottom-left-stuff a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1px;
+}
+
+.bottom-left-stuff div {
+  padding: 8px 8px;
+}
 </style>

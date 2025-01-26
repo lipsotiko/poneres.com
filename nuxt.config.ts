@@ -22,6 +22,10 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       buildDate: process.env.BUILD_DATE,
+      apiBase:
+        process.env.NODE_ENV === "development"
+          ? ""
+          : "https://app.poneres.com",
     },
   },
 });
