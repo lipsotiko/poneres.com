@@ -18,7 +18,7 @@
       </div>
     </div>
     <ClientOnly>
-      <IForm v-model="schema">
+      <IForm v-model="schema" @update:modelValue="handleFormUpdate">
         <div v-if="saved" class="form-container">
           <IRow>
             <IColumn>
@@ -33,14 +33,14 @@
             <IColumn xs="12" sm="6">
               <IFormGroup required>
                 <IFormLabel for="firstName">First name</IFormLabel>
-                <IInput v-model="firstName" name="firstName" autocomplete :error="errorTypes" />
+                <IInput name="firstName" autocomplete :error="errorTypes" />
                 <IFormError for="firstName" :visible="errorTypes" />
               </IFormGroup>
             </IColumn>
             <IColumn xs="12" sm="6">
               <IFormGroup required>
                 <IFormLabel for="lastName">Last name</IFormLabel>
-                <IInput v-model="lastName" name="lastName" autocomplete :error="errorTypes" />
+                <IInput name="lastName" autocomplete :error="errorTypes" />
                 <IFormError for="lastName" :visible="errorTypes" />
               </IFormGroup>
             </IColumn>
@@ -49,14 +49,14 @@
             <IColumn xs="12" sm="6">
               <IFormGroup required>
                 <IFormLabel for="email">E-mail address</IFormLabel>
-                <IInput id="email" name="email" autocomplete :error="errorTypes" />
+                <IInput name="email" autocomplete :error="errorTypes" />
                 <IFormError for="email" :visible="errorTypes" />
               </IFormGroup>
             </IColumn>
             <IColumn xs="12" sm="6">
               <IFormGroup required>
                 <IFormLabel for="phone">Phone number</IFormLabel>
-                <IInput id="phone" name="phone" autocomplete :error="errorTypes" />
+                <IInput name="phone" autocomplete :error="errorTypes" />
                 <IFormError for="phone" :visible="errorTypes" />
               </IFormGroup>
             </IColumn>
@@ -65,7 +65,7 @@
             <IColumn xs="12">
               <IFormGroup required>
                 <IFormLabel for="message">Message</IFormLabel>
-                <ITextarea id="message" name="message" autocomplete :error="errorTypes" />
+                <ITextarea name="message" autocomplete :error="errorTypes" />
                 <IFormError for="message" :visible="errorTypes" />
               </IFormGroup>
             </IColumn>
@@ -89,7 +89,12 @@
   </IContainer>
 </template>
 <script setup>
+import { AsYouType } from 'libphonenumber-js'
 import { useForm } from "@inkline/inkline/composables";
+
+useHead({
+  titleTemplate: "Contact | %s",
+});
 
 const runtimeConfig = useRuntimeConfig()
 const saving = ref(false);
@@ -110,12 +115,31 @@ const { schema } = useForm({
   },
   firstName: { validators: [{ name: "required" }] },
   lastName: { validators: [{ name: "required" }] },
-  phone: { validators: [{ name: "required" }] },
+  phone: {
+    validators: [
+      { name: "required" },
+      {
+        name: "custom",
+        message: "Please enter a valid phone number",
+        validator: (v) => {
+          return /\([0-9]{3}\) [0-9]{3}-[0-9]{4}$/.test(v)
+        }
+      }
+    ]
+  },
   message: { validators: [{ name: "required" }] },
 });
 
 const errorTypes = ["touched", "invalid"];
 const successfulSubmission = ref(false);
+
+const handleFormUpdate = async (e) => {
+  if (!e.phone.value) {
+    return;
+  }
+  const formatted = new AsYouType('US').input(e.phone.value);
+  schema.value.phone.value = formatted
+}
 
 const clear = () => {
   schema.value.firstName.value = ''
@@ -144,10 +168,9 @@ const submitRequest = async () => {
     })
   }).then(() => {
     saving.value = false;
-  })
-
-  saving.value = false;
-  saved.value = true;
+    saved.value = true;
+    clear();
+  });
 };
 </script>
 <script>
@@ -193,9 +216,5 @@ export default {
 
 .column {
   margin: 3px 0;
-}
-
-.aside {
-  border-right: 1px solid black;
 }
 </style>

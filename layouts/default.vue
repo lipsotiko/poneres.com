@@ -1,7 +1,7 @@
 <template>
   <ILayout>
     <ILayoutHeader>
-      <INavbar>
+      <INavbar fluid style="z-index: 200;">
         <INavbarBrand to="https://www.poneres.com"><b>Poneres.com</b></INavbarBrand>
         <INavbarCollapsible class="_justify-content:flex-end">
           <INav>

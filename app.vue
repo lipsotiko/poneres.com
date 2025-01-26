@@ -4,8 +4,8 @@
   </NuxtLayout>
 </template>
 <script setup lang="ts">
-const url = "https://poneres.com";
-const title = "Poneres.com | A Property & Investment Group";
+const url = "https://www.poneres.com";
+const title = "Poneres.com";
 const description =
   "Keeping Chicago's rental market running smoothly. Landlords can relax knowing their investments are in qualified hands, with services covering everything from tenant placement to maintenance coordination.";
 
@@ -79,5 +79,9 @@ html {
 
 .bottom-left-stuff div {
   padding: 8px 8px;
+}
+
+textarea {
+  height: 100px;
 }
 </style>
