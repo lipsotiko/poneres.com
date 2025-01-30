@@ -84,4 +84,14 @@ html {
 textarea {
   height: 100px;
 }
+
+:root {
+  --navbar--box-shadow: none;
+  --navbar--border-radius: 0px;
+  --navbar--border-width: 0px;
+  --navbar--collapsed--item--background: var(--color-light-tint-50);
+  --navbar--light--background: var(--color-light-tint-50);
+  --navbar--light--collapsed--background: var(--color-light-tint-50);
+  --navbar--light--item--hover--background: var(--color-light-shade-50);
+}
 </style>

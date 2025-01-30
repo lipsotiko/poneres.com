@@ -2,7 +2,7 @@
   <IToast v-if="saved" v-model="saved" color="success" dismissible>
     <p>Your request has been submitted. Our team will be in touch with you soon.</p>
   </IToast>
-  <IContainer class="sign-up-container">
+  <IContainer>
     <div class="top">
       <h3 class="title">Contact Us</h3>
       <p class="lead">Have a question? We're here to help!</p>
@@ -74,7 +74,7 @@
             <IColumn>
               <div class="create-request">
                 <div>
-                  <IButton color="primary" size="lg" :loading="saving" @click="submitRequest"
+                  <IButton color="dark" size="lg" :loading="saving" @click="submitRequest"
                     :disabled="!schema.touched || schema.invalid">
                     Submit</IButton>
                   <IButton outline color="dark" size="lg" @click="clear" :disabled="saving">
@@ -167,15 +167,10 @@ const submitRequest = async () => {
       'message': schema.value.message.value
     })
   }).then(() => {
+    clear();
     saving.value = false;
     saved.value = true;
-    clear();
   });
-};
-</script>
-<script>
-export default {
-  name: "Tenant Application",
 };
 </script>
 <style scoped>

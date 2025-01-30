@@ -7,16 +7,19 @@
       <span class="description-text">a property management & investment group focused on
         <b>unlocking real estate potential</b> that benefits investors and
         residents alike.</span>
+        <hr>
+        <div class="consultation">
+          <div>
+            <p class="lead">schedule a consultation today...</p>
+          </div>
+          <IButton size="sm" color="dark" to="/contact">Contact Us!</IButton>
+        </div>
     </div>
     <div class="bottom-left-stuff">
-      <a href="https://app.poneres.com/oauth2/authorization/okta" target="_blank">
-        <img src="~/assets/images/globle.svg" width="20" alt="portal login icon" />
-        <div>Tenant Portal</div>
-      </a>
-      <a href="https://app.poneres.com/apply" target="_blank">
-        <img src="~/assets/images/sign-hanging-solid.svg" width="20" alt="apply icon" />
-        <div>Apply</div>
-      </a>
+      <a href="mailto:hello@poneres.com">
+          <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
+          <div>hello@poneres.com</div>
+        </a>
     </div>
 
     <div class="service-areas">Baltimore - Chicago</div>
@@ -93,7 +96,27 @@
 }
 
 .service-areas {
+  padding: 8px;
   align-self: end;
   font-weight: lighter;
+}
+
+.consultation {
+  @media screen and (max-width: 1119px) {
+    display: grid;
+  }
+
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.consultation div {
+  display: inline;
+  font-size: 22px;
+  margin-right: 18px;
+}
+.consultation p {
+  display: inline;
 }
 </style>
