@@ -2,8 +2,8 @@
   <ILayout>
     <ILayoutHeader>
       <INavbar fluid style="z-index: 200;">
-        <INavbarBrand to="/">
-          <b>Poneres.com</b>
+        <INavbarBrand to="/" style="padding: 0;">
+          <span style="font-size:28px; padding: 0; color: white;">Poneres</span>
         </INavbarBrand>
         <INavbarCollapsible class="_justify-content:flex-end">
           <INav>

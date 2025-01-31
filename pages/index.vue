@@ -96,7 +96,7 @@
 }
 
 .service-areas {
-  padding: 8px;
+  padding: 8px 0;
   align-self: end;
   font-weight: lighter;
 }
@@ -118,5 +118,11 @@
 }
 .consultation p {
   display: inline;
+}
+
+.consultation a {
+  @media screen and (max-width: 1119px) {
+    margin: 12px 0;
+  }
 }
 </style>

@@ -56,15 +56,6 @@ useSeoMeta({
 });
 </script>
 <style lang="scss">
-html {
-  font-family: "RedditMono, sans-serif";
-}
-
-@font-face {
-  font-family: "RedditMono";
-  src: url("~/assets//RedditMono.ttf");
-}
-
 .bottom-left-stuff a {
   color: #000;
   display: flex;
@@ -89,9 +80,6 @@ textarea {
   --navbar--box-shadow: none;
   --navbar--border-radius: 0px;
   --navbar--border-width: 0px;
-  --navbar--collapsed--item--background: var(--color-light-tint-50);
-  --navbar--light--background: var(--color-light-tint-50);
-  --navbar--light--collapsed--background: var(--color-light-tint-50);
-  --navbar--light--item--hover--background: var(--color-light-shade-50);
+  --navbar--light--color: white;
 }
 </style>
