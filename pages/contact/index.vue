@@ -4,8 +4,8 @@
   </IToast>
   <IContainer>
     <div class="top">
-      <h3 class="title">Contact Us</h3>
-      <p class="lead">Have a question? We're here to help!</p>
+      <h3>Contact</h3>
+      <p class="lead">Have a question? I'm here to help!</p>
       <div class="bottom-left-stuff">
         <a href="mailto:hello@poneres.com">
           <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
@@ -74,7 +74,7 @@
             <IColumn>
               <div class="create-request">
                 <div>
-                  <IButton color="dark" size="lg" :loading="saving" @click="submitRequest"
+                  <IButton color="light" size="lg" :loading="saving" @click="submitRequest"
                     :disabled="!schema.touched || schema.invalid">
                     Submit</IButton>
                   <IButton outline color="dark" size="lg" @click="clear" :disabled="saving">
@@ -174,11 +174,6 @@ const submitRequest = async () => {
 };
 </script>
 <style scoped>
-.top {
-  text-align: center;
-  margin-top: 48px;
-}
-
 .bottom-left-stuff {
   display: flex;
   justify-content: center;

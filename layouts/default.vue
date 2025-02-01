@@ -3,11 +3,12 @@
     <ILayoutHeader>
       <INavbar fluid style="z-index: 200;">
         <INavbarBrand to="/" style="padding: 0;">
-          <span style="font-size:28px; padding: 0; color: white;">Poneres</span>
+          <span style="font-size:28px; padding: 0; color: white;">Evangelos Poneres</span>
         </INavbarBrand>
         <INavbarCollapsible class="_justify-content:flex-end">
           <INav>
             <INavItem to="/" exact-active-class="-active">Home</INavItem>
+            <INavItem to="/about" exact-active-class="-active">About</INavItem>
             <IDropdown events="hover" size="sm" :hoverHideDelay="0">
               <INavItem stopPropagation>Residents</INavItem>
               <template #body>

@@ -5,14 +5,14 @@
     </div>
     <div class="description-text-container">
       <span class="description-text">a property management & investment group focused on
-        <b>unlocking real estate potential</b> that benefits investors and
+        <strong>unlocking real estate potential</strong> that benefits investors and
         residents alike.</span>
         <hr>
         <div class="consultation">
           <div>
             <p class="lead">schedule a consultation today...</p>
           </div>
-          <IButton size="sm" color="dark" to="/contact">Contact Us!</IButton>
+          <IButton size="sm" color="light" to="/contact">Contact Us!</IButton>
         </div>
     </div>
     <div class="bottom-left-stuff">
@@ -67,7 +67,6 @@
 
 .description-text {
   font-size: 52px;
-  font-weight: lighter;
 
   @media screen and (max-width: 5000px) {
     font-size: 42px;

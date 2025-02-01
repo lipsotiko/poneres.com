@@ -56,6 +56,11 @@ useSeoMeta({
 });
 </script>
 <style lang="scss">
+@font-face {
+  font-family: "Playfair Display";
+  src: url("~/assets/PlayfairDisplay.ttf");
+}
+
 .bottom-left-stuff a {
   color: #000;
   display: flex;
@@ -76,10 +81,19 @@ textarea {
   height: 100px;
 }
 
+.top {
+  text-align: center;
+  margin-top: 48px;
+}
+
 :root {
+  --button--light--color: white;
+  --body--font-family: "Playfair Display";
+  --h3--font-family: "Playfair Display";
   --navbar--box-shadow: none;
   --navbar--border-radius: 0px;
   --navbar--border-width: 0px;
-  --navbar--light--color: white;
+  --navbar--light--color: ivory;
+  --hamburger-menu--light--background: white;
 }
 </style>
