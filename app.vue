@@ -6,8 +6,10 @@
 <script setup lang="ts">
 const url = "https://www.poneres.com";
 const title = "Poneres.com";
-const description =
-  "Keeping Chicago's rental market running smoothly. Landlords can relax knowing their investments are in qualified hands, with services covering everything from tenant placement to maintenance coordination.";
+const description = "buy, sell, & manage real estate in the Chicagoland area with confidence.";
+const areas = ["Chicago", "Des Plaines", "Niles", "Park Ridge"]
+const keywords = areas.map(a => [`${a} area real estate`, `${a} homes`, `${a} homes for sale`]).flat()
+keywords.push("Evangelos Poneres", "property management", "real estate");
 
 useHead({
   title,
@@ -18,12 +20,11 @@ useHead({
     },
     {
       property: "keywords",
-      content:
-        "poneres, property, management, real estate, maintenance, rental, services, tenant, landlord, chicago, niles, park ridge, evanston",
+      content: keywords.join(', ')
     },
     {
       property: "author",
-      content: "Poneres Property Management",
+      content: "Evangelos Poneres",
     },
   ],
   link: [
@@ -47,7 +48,7 @@ useHead({
 useSeoMeta({
   title,
   ogUrl: url,
-  ogTitle: "Poneres Property Management",
+  ogTitle: "Evangelos Poneres | Chicago Real Estate Agent",
   ogDescription: description,
   ogImage: `${url}/poneres-logo.png`,
   ogImageWidth: 600,

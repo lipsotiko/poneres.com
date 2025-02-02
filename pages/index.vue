@@ -4,25 +4,22 @@
       <img class="logo" src="~/assets/images/poneres-logo.png" alt="Poneres.com Logo" />
     </div>
     <div class="description-text-container">
-      <span class="description-text">a property management & investment group focused on
-        <strong>unlocking real estate potential</strong> that benefits investors and
-        residents alike.</span>
-        <hr>
-        <div class="consultation">
-          <div>
-            <p class="lead">schedule a consultation today...</p>
-          </div>
-          <IButton size="sm" color="light" to="/contact">Contact Us!</IButton>
+      <span class="description-text">buy, sell, & manage real estate in the <b>Chicagoland</b> area with confidence.</span>
+      <hr>
+      <div class="consultation">
+        <div>
+          <p class="lead">schedule a consultation today...</p>
         </div>
+        <IButton size="sm" color="light" to="/contact">Contact Us!</IButton>
+      </div>
     </div>
     <div class="bottom-left-stuff">
       <a href="mailto:hello@poneres.com">
-          <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
-          <div>hello@poneres.com</div>
-        </a>
+        <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
+        <div>hello@poneres.com</div>
+      </a>
     </div>
-
-    <div class="service-areas">Baltimore - Chicago</div>
+    <div class="service-areas">Des Plaines - Niles - Park Ridge</div>
   </div>
 </template>
 <style scoped>
@@ -115,6 +112,7 @@
   font-size: 22px;
   margin-right: 18px;
 }
+
 .consultation p {
   display: inline;
 }
