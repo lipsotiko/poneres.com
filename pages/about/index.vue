@@ -7,6 +7,10 @@
             <IColumn xs="12" lg="3">
                 <div class="image-container">
                     <img src="~/assets/images/headshot.jpeg" />
+                    <p>
+                        <b>Evangelos Poneres</b><br>
+                        License #: 4810001904<br>
+                    </p>
                 </div>
             </IColumn>
             <IColumn xs="12" lg="9">
@@ -15,6 +19,11 @@
                     dream of being a veterinarian at the Shedd Aquarium. With a strong background in property management
                     and a lengthy career in software development, Evangelos is excited to leverage his communication,
                     critical thinking, and problem solving skills to meet your real estate needs.
+                </p>
+                <p class="lead">
+                    Evangelos is a licensed real estate agent with Keller Williams Realty Partners in Park Ridge, IL.
+                    Learn more by clicking <a
+                        href="https://eponeres.kw.com/agent/evangelos-poneres/2000097201">here.</a>
                 </p>
             </IColumn>
         </IRow>

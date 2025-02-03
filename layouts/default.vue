@@ -9,6 +9,7 @@
           <INav>
             <INavItem to="/" exact-active-class="-active">Home</INavItem>
             <INavItem to="/about" exact-active-class="-active">About</INavItem>
+            <INavItem to="https://eponeres.kw.com/search" exact-active-class="-active" target="_blank">Search Properties</INavItem>
             <IDropdown events="hover" size="sm" :hoverHideDelay="0">
               <INavItem stopPropagation>Residents</INavItem>
               <template #body>
