@@ -10,7 +10,7 @@
         <div>
           <p class="lead">schedule a consultation today...</p>
         </div>
-        <IButton size="sm" color="light" to="/contact">Contact Us!</IButton>
+        <IButton size="sm" color="light" to="/contact">Contact</IButton>
       </div>
     </div>
     <div class="bottom-left-stuff">

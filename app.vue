@@ -48,7 +48,7 @@ useHead({
 useSeoMeta({
   title,
   ogUrl: url,
-  ogTitle: "Evangelos Poneres | Chicago Real Estate Agent",
+  ogTitle: "Evangelos Poneres | Chicago Realtor",
   ogDescription: description,
   ogImage: `${url}/poneres-logo.png`,
   ogImageWidth: 600,
