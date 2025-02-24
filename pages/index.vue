@@ -8,9 +8,9 @@
       <hr>
       <div class="consultation">
         <div>
-          <p class="lead">schedule a consultation today...</p>
+          <p class="lead">Get in touch today...</p>
         </div>
-        <IButton size="sm" color="light" to="/contact">Contact</IButton>
+        <IButton outline size="sm" color="light" to="/contact">Contact</IButton>
       </div>
     </div>
     <div class="bottom-left-stuff">
@@ -20,6 +20,10 @@
       </a>
     </div>
     <div class="service-areas">Des Plaines - Niles - Park Ridge</div>
+    <div class="realtor-eho">
+      <img src="~/assets/images/realtor.svg" />
+      <img src="~/assets/images/eho.svg" />
+    </div>
   </div>
 </template>
 <style scoped>
@@ -84,15 +88,11 @@
 
 .bottom-left-stuff {
   align-self: end;
-
-  @media screen and (max-width: 991px) {
-    margin-top: 28px;
-    margin-bottom: 28px;
-  }
+  padding: 10px 0;
 }
 
 .service-areas {
-  padding: 8px 0;
+  padding: 18px 0;
   align-self: end;
   font-weight: lighter;
 }
@@ -121,5 +121,22 @@
   @media screen and (max-width: 1119px) {
     margin: 12px 0;
   }
+}
+
+.realtor-eho {
+  padding: 16px 0;
+  align-self: end;
+
+  
+  @media screen and (max-width: 991px) {
+    padding: 18px 0;
+  }
+}
+
+.realtor-eho img {
+  bottom: 0px;
+  height: 28px;
+  width: 28x;
+  margin-right: 6px;
 }
 </style>

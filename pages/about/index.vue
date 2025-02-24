@@ -9,7 +9,7 @@
                     <img src="~/assets/images/headshot.jpeg" />
                     <p>
                         <b>Evangelos Poneres</b><br>
-                        Keller Williams Realty Partners<br>
+                        REALTOR&reg;<br>
                         License #: 4810001904
                     </p>
                 </div>
@@ -30,9 +30,9 @@
                         </b> in Park Ridge, IL, Evangelos is passionate about helping clients navigate the complexities
                         of the real estate market. He focuses on transparent communication, strategic problem-solving,
                         and meticulous attention to detail, ensuring exceptional service throughout every stage of the
-                        buying and selling process. Whether you&apos;re a first-time homebuyer, an experienced investor,
-                        or simply looking for a change, Evangelos is excited to leverage his skills and personalized
-                        approach to help you achieve your real estate goals.
+                        buying and selling process. Whether you&apos;re a first-time home-buyer, an experienced
+                        investor, or simply looking for a change, Evangelos is excited to leverage his skills and
+                        personalized approach to help you achieve your real estate goals.
                     </p>
                     <p class="lead">
                         If you're looking for a dedicated and reliable partner in your real estate journey, click
