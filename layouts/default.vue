@@ -11,6 +11,12 @@
             <INavItem to="/about" exact-active-class="-active">About</INavItem>
             <INavItem to="https://eponeres.kw.com/search" exact-active-class="-active" target="_blank">Search Properties</INavItem>
             <IDropdown events="hover" size="sm" :hoverHideDelay="0">
+              <INavItem stopPropagation>Sellers</INavItem>
+              <template #body>
+                <IDropdownItem to="/sellers/list-your-property">List your property</IDropdownItem>
+              </template>
+            </IDropdown>
+            <IDropdown events="hover" size="sm" :hoverHideDelay="0">
               <INavItem stopPropagation>Residents</INavItem>
               <template #body>
                 <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Resident Portal
