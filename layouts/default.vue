@@ -3,7 +3,7 @@
     <ILayoutHeader>
       <INavbar fluid style="z-index: 200;">
         <INavbarBrand to="/" style="padding: 0;">
-          <span style="font-size:28px; padding: 0; color: white;">Evangelos Poneres</span>
+          <img class="kw-logo" src="~/assets/images/kw_logo.png" />
         </INavbarBrand>
         <INavbarCollapsible class="_justify-content:flex-end">
           <INav>
@@ -36,3 +36,9 @@
     </ILayoutFooter>
   </ILayout>
 </template>
+<style scoped>
+.kw-logo {
+  width: 200px;
+  margin-right: 12px;
+}
+</style>

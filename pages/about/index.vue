@@ -24,7 +24,7 @@
                     </p>
                     <p class="lead">
                         As a licensed agent with <b>
-                            <a href="https://eponeres.kw.com/agent/evangelos-poneres/2000097201" target="_blank">
+                            <a href="https://eponeres.kw.com/" target="_blank">
                                 Keller Williams Realty Partners
                             </a>
                         </b> in Park Ridge, IL, Evangelos is passionate about helping clients navigate the complexities

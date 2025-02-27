@@ -19,7 +19,7 @@
         <div>hello@poneres.com</div>
       </a>
     </div>
-    <div class="service-areas">Des Plaines - Niles - Park Ridge</div>
+    <div class="service-areas">Edison Park - Niles - Park Ridge</div>
     <div class="realtor-eho">
       <img src="~/assets/images/realtor.svg" />
       <img src="~/assets/images/eho.svg" />
@@ -38,6 +38,7 @@
   grid-auto-columns: 1fr;
   padding: 188px 160px 40px;
   height: 100vh;
+  width: 100vw;
   position: absolute;
   top: 0%;
   bottom: 0%;

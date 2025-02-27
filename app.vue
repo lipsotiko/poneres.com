@@ -7,7 +7,7 @@
 const url = "https://www.poneres.com";
 const title = "Poneres.com";
 const description = "buy, sell, & manage real estate in the Chicagoland area with confidence.";
-const areas = ["Chicago", "Des Plaines", "Niles", "Park Ridge"]
+const areas = ["Chicago", "Edison Park", "Niles", "Park Ridge"]
 const keywords = areas.map(a => [`${a} area real estate`, `${a} homes`, `${a} homes for sale`]).flat()
 keywords.push("Evangelos Poneres", "property management", "real estate");
 

@@ -32,7 +32,7 @@ export default defineConfig({
                 purple: '#8268ae',
                 pink: '#fc778a',
                 white: '#ffffff',
-                light: '#313345', // '#84959c', // 'var(--color-gray-100)',
+                light: '#262835', // '#84959c', // 'var(--color-gray-100)',
                 gray: '#8e9fa4',
                 dark: 'var(--color-gray-800)',
                 black: '#000000',
