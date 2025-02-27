@@ -183,7 +183,7 @@ const submitRequest = async () => {
     });
 };
 </script>
-<style>
+<style scoped>
 .lead {
     padding: 38px;
     margin-bottom: 0;

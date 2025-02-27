@@ -7,7 +7,7 @@
 const url = "https://www.poneres.com";
 const title = "Poneres.com";
 const description = "buy, sell, & manage real estate in the Chicagoland area with confidence.";
-const areas = ["Chicago", "Edison Park", "Niles", "Park Ridge"]
+const areas = ["Chicago", "Edison Park", "Park Ridge"]
 const keywords = areas.map(a => [`${a} area real estate`, `${a} homes`, `${a} homes for sale`]).flat()
 keywords.push("Evangelos Poneres", "property management", "real estate");
 
@@ -48,7 +48,7 @@ useHead({
 useSeoMeta({
   title,
   ogUrl: url,
-  ogTitle: "Evangelos Poneres | Chicago Realtor",
+  ogTitle: "Evangelos Poneres | Chicago REALTOR",
   ogDescription: description,
   ogImage: `${url}/poneres-logo.png`,
   ogImageWidth: 600,

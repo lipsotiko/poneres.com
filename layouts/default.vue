@@ -3,6 +3,7 @@
     <ILayoutHeader>
       <INavbar fluid style="z-index: 200;">
         <INavbarBrand to="/" style="padding: 0;">
+          <span class="ep-name">Evangelos Poneres |</span>
           <img class="kw-logo" src="~/assets/images/kw_logo.png" />
         </INavbarBrand>
         <INavbarCollapsible class="_justify-content:flex-end">
@@ -19,9 +20,9 @@
             <IDropdown events="hover" size="sm" :hoverHideDelay="0">
               <INavItem stopPropagation>Residents</INavItem>
               <template #body>
+                <IDropdownItem to="/residents/apply">Rental Application</IDropdownItem>
                 <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Resident Portal
                 </IDropdownItem>
-                <IDropdownItem to="https://app.poneres.com/apply" target="_blank">Rental Application</IDropdownItem>
               </template>
             </IDropdown>
             <INavItem to="/contact" exact-active-class="-active">Contact</INavItem>
@@ -37,8 +38,27 @@
   </ILayout>
 </template>
 <style scoped>
+.ep-name {
+  font-size: 28px;
+  padding-right: 10px;
+  color: white;
+
+  @media screen and (max-width: 552px) {
+    font-size: 18px;
+    padding-right: 6px;
+  }
+}
+
 .kw-logo {
-  width: 200px;
+  width: 188px;
   margin-right: 12px;
+
+  @media screen and (max-width: 552px) {
+    width: 122px;
+  }
+
+  @media screen and (max-width: 398px) {
+    width: 100px;
+  }
 }
 </style>

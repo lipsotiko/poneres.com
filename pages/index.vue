@@ -14,12 +14,16 @@
       </div>
     </div>
     <div class="bottom-left-stuff">
+      <a href="https://www.instagram.com/poneres.kw.realtor/" target="_blank">
+        <img src="~/assets/images/instagram.svg" width="20" alt="email icon" />
+        <div>instagram</div>
+      </a>
       <a href="mailto:hello@poneres.com">
         <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
         <div>hello@poneres.com</div>
       </a>
     </div>
-    <div class="service-areas">Edison Park - Niles - Park Ridge</div>
+    <div class="service-areas">Edison Park - Park Ridge</div>
     <div class="realtor-eho">
       <img src="~/assets/images/realtor.svg" />
       <img src="~/assets/images/eho.svg" />
