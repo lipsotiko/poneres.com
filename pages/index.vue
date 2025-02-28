@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="bottom-left-stuff">
-      <a href="https://www.instagram.com/poneres.kw.realtor/" target="_blank">
+      <a href="https://www.instagram.com/poneres.kw/" target="_blank">
         <img src="~/assets/images/instagram.svg" width="20" alt="email icon" />
         <div>instagram</div>
       </a>

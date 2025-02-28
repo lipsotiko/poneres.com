@@ -4,7 +4,7 @@
       <INavbar fluid style="z-index: 200;">
         <INavbarBrand to="/" style="padding: 0;">
           <span class="ep-name">Evangelos Poneres |</span>
-          <img class="kw-logo" src="~/assets/images/kw_logo.png" />
+          <img class="kw-logo" src="~/assets/images/kw.svg" />
         </INavbarBrand>
         <INavbarCollapsible class="_justify-content:flex-end">
           <INav>
@@ -50,15 +50,15 @@
 }
 
 .kw-logo {
-  width: 188px;
+  width: 48px;
   margin-right: 12px;
 
   @media screen and (max-width: 552px) {
-    width: 122px;
+    width: 38px;
   }
 
   @media screen and (max-width: 398px) {
-    width: 100px;
+    width: 28px;
   }
 }
 </style>
