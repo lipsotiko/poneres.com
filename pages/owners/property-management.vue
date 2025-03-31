@@ -23,7 +23,7 @@
                     <tbody>
                         <tr>
                             <td width="75%">Management</td>
-                            <td>10% (min. $125) / month</td>
+                            <td>10% (min. $188) / month</td>
                         </tr>
                         <tr>
                             <td>Leasing</td>
