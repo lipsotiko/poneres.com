@@ -10,7 +10,7 @@
                     <p>
                         <b>Evangelos Poneres</b><br>
                         REALTOR&reg;<br>
-                        License #: 475.214381
+                        Lic. #: 4810001904
                     </p>
                 </div>
             </IColumn>
