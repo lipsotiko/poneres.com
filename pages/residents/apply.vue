@@ -208,21 +208,6 @@
               &nbsp;
             </IRow>
             <IRow>
-              <p class="lead">Financial Information</p>
-            </IRow>
-            <IRow>
-              <IColumn xs="12">
-                <IFormGroup>
-                  <IFormLabel for="otherIncome">Do you have other sources of income? If so, please explain:</IFormLabel>
-                  <ITextarea id="otherIncome" name="otherIncome" autocomplete :error="errorTypes" />
-                  <IFormError for="otherIncome" :visible="errorTypes" />
-                </IFormGroup>
-              </IColumn>
-            </IRow>
-            <IRow>
-              &nbsp;
-            </IRow>
-            <IRow>
               <p class="lead">Additional Information</p>
             </IRow>
             <IRow>
@@ -235,16 +220,7 @@
               </IColumn>
             </IRow>
             <IRow>
-              <IColumn xs="12">
-                <IFormGroup>
-                  <IFormLabel for="socialMedia">Please list any social media accounts you may have:</IFormLabel>
-                  <ITextarea id="socialMedia" name="socialMedia" autocomplete :error="errorTypes" />
-                  <IFormError for="socialMedia" :visible="errorTypes" />
-                </IFormGroup>
-              </IColumn>
-            </IRow>
-            <IRow>
-              <IColumn xs="12" sm="3">
+              <IColumn xs="12" sm="4">
                 <IFormGroup required>
                   <IFormLabel for="doYouSmoke">Do you smoke?</IFormLabel>
                   <IRadioGroup id="doYouSmoke" name="doYouSmoke" :options="[
@@ -254,7 +230,7 @@
                   <IFormError for="doYouSmoke" :visible="errorTypes" />
                 </IFormGroup>
               </IColumn>
-              <IColumn xs="12" sm="3">
+              <IColumn xs="12" sm="4">
                 <IFormGroup required>
                   <IFormLabel for="doYouHavePets">Do you have pets?</IFormLabel>
                   <IRadioGroup id="doYouHavePets" name="doYouHavePets" :options="[
@@ -264,7 +240,7 @@
                   <IFormError for="doYouHavePets" :visible="errorTypes" />
                 </IFormGroup>
               </IColumn>
-              <IColumn xs="12" sm="3">
+              <IColumn xs="12" sm="4">
                 <IFormGroup required>
                   <IFormLabel for="haveYouBeenEvicted">Have you ever been evicted?</IFormLabel>
                   <IRadioGroup id="haveYouBeenEvicted" name="haveYouBeenEvicted" :options="[
@@ -272,16 +248,6 @@
                     { id: 'no', label: 'No' },
                   ]" />
                   <IFormError for="haveYouBeenEvicted" :visible="errorTypes" />
-                </IFormGroup>
-              </IColumn>
-              <IColumn xs="12" sm="3">
-                <IFormGroup required>
-                  <IFormLabel for="convictedOfFelony">Have you been convicted of a felony?</IFormLabel>
-                  <IRadioGroup id="convictedOfFelony" name="convictedOfFelony" :options="[
-                    { id: 'yes', label: 'Yes' },
-                    { id: 'no', label: 'No' },
-                  ]" />
-                  <IFormError for="convictedOfFelony" :visible="errorTypes" />
                 </IFormGroup>
               </IColumn>
             </IRow>
@@ -336,14 +302,11 @@
     previousLandlordPhone: { validators: [{ name: "required" }] },
     lengthOfResidence: { validators: [{ name: "required" }] },
     reasonForMoving: { validators: [{ name: "required" }] },
-    otherIncome: {},
     references: { validators: [{ name: "required" }] },
     numberOfOccupants: { validators: [{ name: "required" }]},
-    socialMedia: {},
     doYouSmoke: { validators: [{ name: "required" }] },
     doYouHavePets: { validators: [{ name: "required" }] },
     haveYouBeenEvicted: { validators: [{ name: "required" }] },
-    convictedOfFelony: { validators: [{ name: "required" }] },
   });
   
   const errorTypes = ["touched", "invalid"];

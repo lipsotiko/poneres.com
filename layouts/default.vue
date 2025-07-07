@@ -16,7 +16,7 @@
               <INavItem stopPropagation>Owners</INavItem>
               <template #body>
                 <IDropdownItem to="/owners/list-your-property">List your property</IDropdownItem>
-                <!-- <IDropdownItem to="/owners/property-management">Manage your property</IDropdownItem> -->
+                <IDropdownItem to="/owners/property-management">Manage your property</IDropdownItem>
                 <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Owner Portal
                 </IDropdownItem>
               </template>
