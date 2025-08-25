@@ -23,7 +23,7 @@
                     <tbody>
                         <tr>
                             <td width="75%">Management</td>
-                            <td>10% (min. $188) / month</td>
+                            <td>10% (min. $225) / month</td>
                         </tr>
                         <tr>
                             <td>Leasing</td>
@@ -149,13 +149,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>24/7 Maintenance & Repair</td>
-                            <td>
-                                <IIcon name="ink-check" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Online Document Repository</td>
+                            <td>Maintenance & Repair</td>
                             <td>
                                 <IIcon name="ink-check" />
                             </td>
@@ -166,7 +160,6 @@
                                 <IIcon name="ink-check" />
                             </td>
                         </tr>
-
                     </tbody>
                 </ITable>
             </div>
