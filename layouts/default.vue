@@ -17,18 +17,17 @@
               <template #body>
                 <IDropdownItem to="/owners/list-your-property">List your property</IDropdownItem>
                 <IDropdownItem to="/owners/property-management">Manage your property</IDropdownItem>
-                <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Owner Portal
-                </IDropdownItem>
+                <!-- <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Owner Portal</IDropdownItem> -->
               </template>
             </IDropdown>
-            <IDropdown events="hover" size="sm" :hoverHideDelay="0">
+            <!-- <IDropdown events="hover" size="sm" :hoverHideDelay="0">
               <INavItem stopPropagation>Residents</INavItem>
               <template #body>
                 <IDropdownItem to="/residents/apply">Rental Application</IDropdownItem>
                 <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Resident Portal
                 </IDropdownItem>
               </template>
-            </IDropdown>
+            </IDropdown> -->
             <INavItem to="/contact" exact-active-class="-active">Contact</INavItem>
           </INav>
         </INavbarCollapsible>
