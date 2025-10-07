@@ -1,11 +1,18 @@
 <template>
   <div class="my-container">
     <div>
-      <img class="logo" src="~/assets/images/poneres-logo.png" alt="Poneres.com Logo" />
+      <img
+        class="logo"
+        src="~/assets/images/poneres-logo.png"
+        alt="Poneres.com Logo"
+      />
     </div>
     <div class="description-text-container">
-      <span class="description-text">buy, sell, & lease real estate in the <b>Chicagoland</b> area with confidence.</span>
-      <hr>
+      <span class="description-text"
+        >buy, sell, & lease real estate in the <b>Chicagoland</b> area with
+        confidence.</span
+      >
+      <hr />
       <div class="consultation">
         <div>
           <p class="lead">Get in touch today...</p>
@@ -19,7 +26,11 @@
         <div>instagram</div>
       </a>
       <a href="mailto:hello@poneres.com">
-        <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
+        <img
+          src="~/assets/images/envelope-solid.svg"
+          width="20"
+          alt="email icon"
+        />
         <div>hello@poneres.com</div>
       </a>
     </div>
@@ -132,7 +143,6 @@
   padding: 16px 0;
   align-self: end;
 
-  
   @media screen and (max-width: 991px) {
     padding: 18px 0;
   }

@@ -6,9 +6,12 @@
 <script setup lang="ts">
 const url = "https://www.poneres.com";
 const title = "Poneres.com";
-const description = "buy, sell, & manage real estate in the Chicagoland area with confidence.";
-const areas = ["Chicago", "Edison Park", "Park Ridge"]
-const keywords = areas.map(a => [`${a} area real estate`, `${a} homes`, `${a} homes for sale`]).flat()
+const description =
+  "buy, sell, & manage real estate in the Chicagoland area with confidence.";
+const areas = ["Chicago", "Edison Park", "Park Ridge"];
+const keywords = areas
+  .map((a) => [`${a} area real estate`, `${a} homes`, `${a} homes for sale`])
+  .flat();
 keywords.push("Evangelos Poneres", "property management", "real estate");
 
 useHead({
@@ -20,7 +23,7 @@ useHead({
     },
     {
       property: "keywords",
-      content: keywords.join(', ')
+      content: keywords.join(", "),
     },
     {
       property: "author",

@@ -1,8 +1,8 @@
 <template>
   <ILayout>
     <ILayoutHeader>
-      <INavbar fluid style="z-index: 200;">
-        <INavbarBrand to="/" style="padding: 0;">
+      <INavbar fluid style="z-index: 200">
+        <INavbarBrand to="/" style="padding: 0">
           <span class="ep-name">Evangelos Poneres |</span>
           <img class="kw-logo" src="~/assets/images/kw.svg" />
         </INavbarBrand>
@@ -10,13 +10,21 @@
           <INav>
             <INavItem to="/" exact-active-class="-active">Home</INavItem>
             <INavItem to="/about" exact-active-class="-active">About</INavItem>
-            <INavItem to="https://eponeres.kw.com/search" exact-active-class="-active" target="_blank">Search Properties
+            <INavItem
+              to="https://eponeres.kw.com/search"
+              exact-active-class="-active"
+              target="_blank"
+              >Search Properties
             </INavItem>
             <IDropdown events="hover" size="sm" :hoverHideDelay="0">
               <INavItem stopPropagation>Owners</INavItem>
               <template #body>
-                <IDropdownItem to="/owners/list-your-property">List your property</IDropdownItem>
-                <IDropdownItem to="/owners/lease-property">Lease your property</IDropdownItem>
+                <IDropdownItem to="/owners/list-your-property"
+                  >List your property</IDropdownItem
+                >
+                <IDropdownItem to="/owners/lease-property"
+                  >Lease your property</IDropdownItem
+                >
                 <!-- <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Owner Portal</IDropdownItem> -->
               </template>
             </IDropdown>
@@ -28,7 +36,9 @@
                 </IDropdownItem>
               </template>
             </IDropdown> -->
-            <INavItem to="/contact" exact-active-class="-active">Contact</INavItem>
+            <INavItem to="/contact" exact-active-class="-active"
+              >Contact</INavItem
+            >
           </INav>
         </INavbarCollapsible>
       </INavbar>
@@ -36,8 +46,7 @@
     <ILayoutContent>
       <slot />
     </ILayoutContent>
-    <ILayoutFooter>
-    </ILayoutFooter>
+    <ILayoutFooter> </ILayoutFooter>
   </ILayout>
 </template>
 <style scoped>

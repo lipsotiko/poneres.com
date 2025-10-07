@@ -1,6 +1,8 @@
 <template>
   <IToast v-if="saved" v-model="saved" color="success" dismissible>
-    <p>Your request has been submitted. Our team will be in touch with you soon.</p>
+    <p>
+      Your request has been submitted. Our team will be in touch with you soon.
+    </p>
   </IToast>
   <IContainer>
     <div class="top">
@@ -8,11 +10,19 @@
       <p class="lead">Have a question? I'm here to help!</p>
       <div class="bottom-left-stuff">
         <a href="mailto:hello@poneres.com">
-          <img src="~/assets/images/envelope-solid.svg" width="20" alt="email icon" />
+          <img
+            src="~/assets/images/envelope-solid.svg"
+            width="20"
+            alt="email icon"
+          />
           <div>hello@poneres.com</div>
         </a>
         <a href="tel:443-301-9719">
-          <img src="~/assets/images/phone-solid.svg" width="20" alt="phone icon" />
+          <img
+            src="~/assets/images/phone-solid.svg"
+            width="20"
+            alt="phone icon"
+          />
           <div>443-301-9719</div>
         </a>
       </div>
@@ -74,11 +84,24 @@
             <IColumn>
               <div class="create-request">
                 <div>
-                  <IButton color="light" size="lg" :loading="saving" @click="submitRequest"
-                    :disabled="!schema.touched || schema.invalid">
-                    Submit</IButton>
-                  <IButton outline color="dark" size="lg" @click="clear" :disabled="saving">
-                    Clear</IButton>
+                  <IButton
+                    color="light"
+                    size="lg"
+                    :loading="saving"
+                    @click="submitRequest"
+                    :disabled="!schema.touched || schema.invalid"
+                  >
+                    Submit</IButton
+                  >
+                  <IButton
+                    outline
+                    color="dark"
+                    size="lg"
+                    @click="clear"
+                    :disabled="saving"
+                  >
+                    Clear</IButton
+                  >
                 </div>
               </div>
             </IColumn>
@@ -89,14 +112,14 @@
   </IContainer>
 </template>
 <script setup>
-import { AsYouType } from 'libphonenumber-js'
+import { AsYouType } from "libphonenumber-js";
 import { useForm } from "@inkline/inkline/composables";
 
 useHead({
   titleTemplate: "Contact | %s",
 });
 
-const runtimeConfig = useRuntimeConfig()
+const runtimeConfig = useRuntimeConfig();
 const saving = ref(false);
 const saved = ref(false);
 
@@ -122,10 +145,10 @@ const { schema } = useForm({
         name: "custom",
         message: "Please enter a valid phone number",
         validator: (v) => {
-          return /\([0-9]{3}\) [0-9]{3}-[0-9]{4}$/.test(v)
-        }
-      }
-    ]
+          return /\([0-9]{3}\) [0-9]{3}-[0-9]{4}$/.test(v);
+        },
+      },
+    ],
   },
   message: { validators: [{ name: "required" }] },
 });
@@ -137,17 +160,17 @@ const handleFormUpdate = async (e) => {
   if (!e.phone.value) {
     return;
   }
-  const formatted = new AsYouType('US').input(e.phone.value);
-  schema.value.phone.value = formatted
-}
+  const formatted = new AsYouType("US").input(e.phone.value);
+  schema.value.phone.value = formatted;
+};
 
 const clear = () => {
-  schema.value.firstName.value = ''
-  schema.value.lastName.value = ''
-  schema.value.email.value = ''
-  schema.value.phone.value = ''
-  schema.value.message.value = ''
-}
+  schema.value.firstName.value = "";
+  schema.value.lastName.value = "";
+  schema.value.email.value = "";
+  schema.value.phone.value = "";
+  schema.value.message.value = "";
+};
 
 const submitRequest = async () => {
   saving.value = true;
@@ -155,17 +178,17 @@ const submitRequest = async () => {
   await $fetch(`/api/public/contact/request`, {
     baseURL: runtimeConfig.public.apiBase,
     method: "POST",
-    mode: 'no-cors',
+    mode: "no-cors",
     headers: {
-      'Content-Type': 'x-www-form-urlencoded',
+      "Content-Type": "x-www-form-urlencoded",
     },
     body: new URLSearchParams({
-      'firstName': schema.value.firstName.value,
-      'lastName': schema.value.lastName.value,
-      'email': schema.value.email.value,
-      'phone': schema.value.phone.value,
-      'message': schema.value.message.value
-    })
+      firstName: schema.value.firstName.value,
+      lastName: schema.value.lastName.value,
+      email: schema.value.email.value,
+      phone: schema.value.phone.value,
+      message: schema.value.message.value,
+    }),
   }).then(() => {
     clear();
     saving.value = false;
