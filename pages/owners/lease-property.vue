@@ -1,15 +1,11 @@
 <template>
     <IContainer>
         <div class="top">
-            <h3>Property Management</h3>
+            <h3>Leasing Property</h3>
         </div>
         <div>
             <p class="lead">
-                Managing a rental property can be time-consuming and complex, but we make it effortless. Our team works
-                closely with you to develop a customized management strategy designed to maximize your property's value
-                and ensure a seamless rental experience. From tenant screening and lease management to maintenance
-                coordination and financial reporting, we handle every detail with professionalism and care. Our goal is
-                to protect your investment while maximizing rental income and keeping your property in top condition.
+                Getting your property leased shouldn't be a hassle — and with us, it isn't. We focus on securing qualified tenants quickly and efficiently, handling everything from marketing and showings to tenant screening and lease execution. Our streamlined leasing process is designed to minimize vacancy time while ensuring your property is in good hands from the start.
             </p>
             <div>
                 <ITable>
@@ -22,19 +18,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td width="75%">Management</td>
-                            <td>10% (min. $225) / month</td>
-                        </tr>
-                        <tr>
                             <td>Leasing</td>
                             <td>1 Month's Rent</td>
                         </tr>
                         <tr>
                             <td>Lease renewal</td>
-                            <td>$0</td>
-                        </tr>
-                        <tr>
-                            <td>Set-up</td>
                             <td>$0</td>
                         </tr>
                     </tbody>
@@ -126,7 +114,7 @@
                     </tbody>
                 </ITable>
             </div>
-            <div>
+            <!-- <div>
                 <ITable>
                     <thead>
                         <tr>
@@ -162,8 +150,8 @@
                         </tr>
                     </tbody>
                 </ITable>
-            </div>
-            <div>
+            </div> -->
+            <!-- <div>
                 <ITable>
                     <thead>
                         <tr>
@@ -193,7 +181,7 @@
                         </tr>
                     </tbody>
                 </ITable>
-            </div>
+            </div> -->
         </div>
     </IContainer>
 </template>

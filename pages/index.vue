@@ -4,7 +4,7 @@
       <img class="logo" src="~/assets/images/poneres-logo.png" alt="Poneres.com Logo" />
     </div>
     <div class="description-text-container">
-      <span class="description-text">buy, sell, & manage real estate in the <b>Chicagoland</b> area with confidence.</span>
+      <span class="description-text">buy, sell, & lease real estate in the <b>Chicagoland</b> area with confidence.</span>
       <hr>
       <div class="consultation">
         <div>
