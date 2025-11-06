@@ -6,13 +6,7 @@
 <script setup lang="ts">
 const url = "https://www.poneres.com";
 const title = "Poneres.com";
-const description =
-  "buy, sell, & manage real estate in the Chicagoland area with confidence.";
-const areas = ["Chicago", "Edison Park", "Park Ridge"];
-const keywords = areas
-  .map((a) => [`${a} area real estate`, `${a} homes`, `${a} homes for sale`])
-  .flat();
-keywords.push("Evangelos Poneres", "property management", "real estate");
+const description = "Rent collection";
 
 useHead({
   title,
@@ -20,10 +14,6 @@ useHead({
     {
       property: "description",
       content: description,
-    },
-    {
-      property: "keywords",
-      content: keywords.join(", "),
     },
     {
       property: "author",
@@ -51,7 +41,7 @@ useHead({
 useSeoMeta({
   title,
   ogUrl: url,
-  ogTitle: "Evangelos Poneres | Chicago REALTOR",
+  ogTitle: "Evangelos Poneres",
   ogDescription: description,
   ogImage: `${url}/poneres-logo.png`,
   ogImageWidth: 600,
@@ -93,7 +83,10 @@ textarea {
 :root {
   --button--light--color: white;
   --body--font-family: "Playfair Display";
+  --h1--font-family: "Playfair Display";
+  --h2--font-family: "Playfair Display";
   --h3--font-family: "Playfair Display";
+  --h4--font-family: "Playfair Display";
   --navbar--box-shadow: none;
   --navbar--border-radius: 0px;
   --navbar--border-width: 0px;

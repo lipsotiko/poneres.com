@@ -1,7 +1,7 @@
 {
   "name": "poneres.com",
   "version": "1.0.0",
-  "description": "Poneres Property Management",
+  "description": "Poneres.com",
   "main": "index.html",
   "scripts": {
     "build": "nuxt build",

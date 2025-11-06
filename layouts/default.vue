@@ -3,41 +3,13 @@
     <ILayoutHeader>
       <INavbar fluid style="z-index: 200">
         <INavbarBrand to="/" style="padding: 0">
-          <span class="ep-name">Evangelos Poneres |</span>
-          <img class="kw-logo" src="~/assets/images/kw.svg" />
+          <span class="ep-name">Poneres.com</span>
         </INavbarBrand>
         <INavbarCollapsible class="_justify-content:flex-end">
           <INav>
             <INavItem to="/" exact-active-class="-active">Home</INavItem>
-            <INavItem to="/about" exact-active-class="-active">About</INavItem>
-            <INavItem
-              to="https://eponeres.kw.com/search"
-              exact-active-class="-active"
-              target="_blank"
-              >Search Properties
-            </INavItem>
-            <IDropdown events="hover" size="sm" :hoverHideDelay="0">
-              <INavItem stopPropagation>Owners</INavItem>
-              <template #body>
-                <IDropdownItem to="/owners/list-your-property"
-                  >List your property</IDropdownItem
-                >
-                <IDropdownItem to="/owners/lease-property"
-                  >Lease your property</IDropdownItem
-                >
-                <!-- <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Owner Portal</IDropdownItem> -->
-              </template>
-            </IDropdown>
-            <!-- <IDropdown events="hover" size="sm" :hoverHideDelay="0">
-              <INavItem stopPropagation>Residents</INavItem>
-              <template #body>
-                <IDropdownItem to="/residents/apply">Rental Application</IDropdownItem>
-                <IDropdownItem to="https://app.poneres.com/oauth2/authorization/okta" target="_blank">Resident Portal
-                </IDropdownItem>
-              </template>
-            </IDropdown> -->
-            <INavItem to="/contact" exact-active-class="-active"
-              >Contact</INavItem
+            <INavItem to="/support" exact-active-class="-active"
+              >Support</INavItem
             >
           </INav>
         </INavbarCollapsible>
@@ -58,19 +30,6 @@
   @media screen and (max-width: 552px) {
     font-size: 18px;
     padding-right: 6px;
-  }
-}
-
-.kw-logo {
-  width: 48px;
-  margin-right: 12px;
-
-  @media screen and (max-width: 552px) {
-    width: 38px;
-  }
-
-  @media screen and (max-width: 398px) {
-    width: 28px;
   }
 }
 </style>

@@ -9,22 +9,10 @@
     </div>
     <div class="description-text-container">
       <span class="description-text"
-        >buy, sell, & lease real estate in the <b>Chicagoland</b> area with
-        confidence.</span
+        >A site for rent collection support.</span
       >
-      <hr />
-      <div class="consultation">
-        <div>
-          <p class="lead">Get in touch today...</p>
-        </div>
-        <IButton outline size="sm" color="light" to="/contact">Contact</IButton>
-      </div>
     </div>
     <div class="bottom-left-stuff">
-      <a href="https://www.instagram.com/poneres.kw/" target="_blank">
-        <img src="~/assets/images/instagram.svg" width="20" alt="email icon" />
-        <div>instagram</div>
-      </a>
       <a href="mailto:hello@poneres.com">
         <img
           src="~/assets/images/envelope-solid.svg"
@@ -34,10 +22,8 @@
         <div>hello@poneres.com</div>
       </a>
     </div>
-    <div class="service-areas">Edison Park - Park Ridge</div>
+    <div class="service-areas">Maryland</div>
     <div class="realtor-eho">
-      <img src="~/assets/images/realtor.svg" />
-      <img src="~/assets/images/eho.svg" />
     </div>
   </div>
 </template>
@@ -65,6 +51,7 @@
 }
 
 .description-text-container {
+  padding-top: 48px;
   grid-area: span 1 / span 2 / span 1 / span 2;
 
   @media screen and (max-width: 991px) {
@@ -121,37 +108,5 @@
   @media screen and (max-width: 991px) {
     display: none;
   }
-}
-
-.consultation div {
-  display: inline;
-  font-size: 22px;
-  margin-right: 18px;
-}
-
-.consultation p {
-  display: inline;
-}
-
-.consultation a {
-  @media screen and (max-width: 1119px) {
-    margin: 12px 0;
-  }
-}
-
-.realtor-eho {
-  padding: 16px 0;
-  align-self: end;
-
-  @media screen and (max-width: 991px) {
-    padding: 18px 0;
-  }
-}
-
-.realtor-eho img {
-  bottom: 0px;
-  height: 28px;
-  width: 28x;
-  margin-right: 6px;
 }
 </style>
